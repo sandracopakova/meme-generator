@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import memesData from "../memesData.js";
 
 export default function Meme() {
@@ -43,7 +43,7 @@ export default function Meme() {
         </button>
       </div>
       <div className="meme">
-        <img src={meme.randomImage} className="meme__image" />
+        <img src={meme.randomImage} className="meme__image" alt="" />
         <h2 className="meme__text top">{meme.topText}</h2>
         <h2 className="meme__text bottom">{meme.bottomText}</h2>
       </div>
